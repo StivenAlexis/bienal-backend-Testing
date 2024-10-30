@@ -1,4 +1,4 @@
-const Evento = require('../db/models/Evento');
+const Evento = require('../db/models/Event');
 
 /**
  * Crea un nuevo evento
