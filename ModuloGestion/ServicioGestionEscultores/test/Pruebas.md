@@ -53,3 +53,7 @@ Este archivo contiene pruebas para validar la lógica de negocio del caso de uso
 
    ```bash
    npm install --save-dev jest
+2.Ejecuta todas las pruebas con el comando:
+    ```bash
+    npm test
+3.Los resultados mostrarán qué pruebas han pasado o fallado, ayudando a identificar errores en el código o en la lógica de negocio.
