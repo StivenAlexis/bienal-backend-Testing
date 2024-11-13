@@ -1,0 +1,14 @@
+{
+  "name": "test_automatizados",
+  "version": "1.0.0",
+  "main": "Test_automatizado_Req_6.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0"
+  }
+}
