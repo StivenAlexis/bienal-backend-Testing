@@ -1,2 +1,11 @@
-node_modules/*
+node_modules
 serverBuild.js
+.env
+# docker
+error.log
+# ssl certificates
+*.crt
+*.key
+*.pem
+#Servicio autenticacion
+frontend-bienal-firebase-adminsdk-rih0d-6aefe6927f.json
