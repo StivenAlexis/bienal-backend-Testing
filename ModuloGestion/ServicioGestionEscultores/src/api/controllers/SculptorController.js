@@ -173,3 +173,47 @@ module.exports = {
   deleteSculptorById,
   searchSculptorByName
 };
+  
+    // Actualizar el contacto de un escultor
+    updateSculptorContact(req, res) {
+      try {
+        const { name } = req.params;
+        const { newContact } = req.body;
+        this.sculptorService.updateSculptorContact(name, newContact);
+        res.status(200).json({ message: 'Contacto del escultor actualizado exitosamente.' });
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+    }
+  
+    // Actualizar las obras de un escultor
+    updateSculptorWorks(req, res) {
+      try {
+        const { name } = req.params;
+        const { newWorks } = req.body;
+        this.sculptorService.updateSculptorWorks(name, newWorks);
+        res.status(200).json({ message: 'Obras del escultor actualizadas exitosamente.' });
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+    }
+  
+    // Eliminar un escultor
+    deleteSculptor(req, res) {
+      try {
+        const { name } = req.params;
+        const success = this.sculptorService.deleteSculptor(name);
+        if (success) {
+          res.status(200).json({ message: 'Escultor eliminado exitosamente.' });
+        } else {
+          res.status(404).json({ message: 'Escultor no encontrado.' });
+        }
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+    }
+  }
+  
+  module.exports = SculptorController;
+
+  
